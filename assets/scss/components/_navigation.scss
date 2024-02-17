@@ -8,22 +8,33 @@
 
 .navigation{
     padding: 25px;
-    background-color: $primary-color;
+    background-color: $white;
     display: flex;
     align-items: center;
     border-bottom: solid 3px $secondary-color;
+    justify-content: space-between;
+}
+.navigation .nav-link{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 .mobile-menu {
     display: none;
 }
 .nav-logo img {
-    max-width: 250px;
-    padding-right:70px
+    max-width: 150px;
+    // padding-right:70px
 }
 
 .nav-link {
     padding: 20px;
-    color: #ffffff;
+    color: $primary-color;
     text-decoration: none;
     font-size: 1em;
 }
@@ -34,7 +45,10 @@
         display: flex;
         margin-left: auto; /* This will push the hamburger menu to the right */
     }
-    .nav-link {
+    .nav-logo{
+        justify-content: flex-start;
+    }
+    .nav-link, .navigation .nav-link{
         display: none;
     }
     .mobile-display-style{

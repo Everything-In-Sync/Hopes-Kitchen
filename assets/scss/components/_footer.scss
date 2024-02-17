@@ -18,7 +18,7 @@
 
 footer{
     border-top:3px $secondary-color solid;
-    background-color: $primary-color;
+    background-color: $background-color;
 }
 footer a{
     color: $footer-text-color;
@@ -30,11 +30,18 @@ footer a{
 }
 .footer-image-container img{
     // filter: brightness(0) invert(1);
-    max-width: 300px;
+    max-width: 200px;
 }
 .copyright{
     font-size: .8em;
     text-align: center;
-    color: $background-color;
+    color: $primary-color;
     padding-bottom: 16px;
 }
+.footer-right{
+    color: $primary-color;
+}
+.email-address, .phone-number, .physical-address{
+    color:$primary-color;
+}
+
