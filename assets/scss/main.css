@@ -982,6 +982,12 @@ a, li, ul, button, form, input, textarea {
   content: var(--physical-address);
 }
 
+.hero-text {
+  padding-top: 30px;
+  text-align: center;
+  color: #008080;
+}
+
 :root {
   --primary-color: #008080;
   --secondary-color: #FFD700;
